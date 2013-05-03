@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>セレクトタグでアニメーション</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://dl.dropboxusercontent.com/u/275354/lib/coffee-script.js"></script>
+    <script type="text/javascript" src="http://dl.dropboxusercontent.com/u/275354/lib/timbre.min.js"></script>
+    <script type="text/javascript" src="./select_tag_animation.js" charset='UTF-8'></script>
+    </script>
+    <link rel="stylesheet" type="text/css" href="http://dl.dropbox.com/u/275354/lib/cssreset-min.css">
+    <style type="text/css" media="screen">
+      #wrapper {
+        position: absolute;
+        left: 50%;
+        margin-left: -480px;
+      }
+
+      #wrapper select {
+        margin-top: 18px;
+        float: left;
+      }
+
+      #form {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      #text_input {
+        width: 300px;
+      }
+
+      #submit {
+        border-radius: 3px;
+        padding: 0px 5px;
+        background-color: white;
+        border: 1px solid #222;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      canvas {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="inner"></div>
+      <form accept-charset='UTF-8' method="GET" id="form">
+        <input type="text" name='text' id="text_input" placeholder='入力して表示' />
+        <input type="submit" value="表示する" id="submit" />
+      </form>
+    </div>
+    <canvas id="canvas" width='300' height='20'></canvas>
+  </body>
+</html>
